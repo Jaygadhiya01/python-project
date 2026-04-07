@@ -1,0 +1,359 @@
+statice 
+	->collecting, analyzing, interpreting, presenting, and organizing data.
+	->form data t
+
+type of statistics
+	->Descriptive Statistics
+		describe and summarize data.
+		mean,median,mode,standard deviation
+
+	->Inferential Statistics
+		make predictions or inferences
+		sample and population
+
+
+		Population vs Sample
+			Population
+				->all data set
+			
+			sample
+				->subset of the population
+
+type of data
+	Qualitative Data
+		city,color,gender
+
+	Quantitative Data
+		Discrete Data.
+			Countable numbers.
+		Continuous Data
+			Measured values.
+
+
+Simple Random Sampling
+
+	->Every individual in the population has an equal chance of being selected.
+
+Systematic Sampling
+	->Select every nth individual from a population list
+
+Stratified Sampling
+	->Population divided into groups (strata) based on a characteristic, then random samples are taken from each group.
+
+cluster sampling
+
+	->Population divided into clusters, then whole clusters are randomly selected.
+	->A city is divided into 20 zones (clusters), randomly select 5 zones, and survey everyone in those zones.
+
+
+Convenience Sampling
+	->Sample chosen based on ease of access.
+
+
+Snowball Sampling
+	->Existing participants recruit more participants from their network.
+
+
+Multi-stage Sampling
+	->Combination of two or more sampling methods
+
+
+
+
+*************
+Measures of Central Tendency
+
+	center of data.
+		mean
+		median
+		mode
+
+
+
+Measures of Dispersion
+		Shows how spread out data is.
+			range
+			Variance
+			standard deviation
+
+
+
+
+
+
+
+
+
+
+***************
+Probability Distributions
+
+	distribution shows how data is spread.
+		
+		
+		Normal Distribution
+			Also called Gaussian Distribution
+			Bell-shaped
+
+			Symmetrical
+
+			Mean = Median = Mode
+
+
+
+	Hypothesis Testing
+		Used to test assumptions about data.
+	
+	A/B Testing
+		Compare two versions.
+	
+
+	Regression
+		Regression predicts relationship between variables.
+	
+
+	Non-Parametric Tests
+
+
+
+*******************
+What is Probability?
+	Probability measures how likely an event is to occur..
+
+
+		Types of Events:
+			Simple Event
+					Single outcome.
+
+			Compound Event
+					Multiple outcomes.
+
+			Impossible Event
+					Probability = 0
+
+
+			Certain Event
+					Probability = 1
+
+
+
+		Addition Rule of Probability
+				Used when either event A or B occurs.
+
+		
+		Multiplication Rule
+				Used when both events happen together.
+
+		Conditional Probability
+				Probability of event A given that B has already happened.
+
+		Independent vs Dependent Events
+				One event does not affect the other.
+
+				One event affects the other.
+
+		
+		Bayes Theorem
+				Used in machine learning and AI.
+				Bayes theorem calculates true probability of disease after positive test.
+
+
+		Random Variables
+
+				A variable whose value depends on random outcome.
+		
+
+		Discrete Random Variable
+				Countable values.
+
+
+		Continuous Random Variable
+				Infinite values.
+
+
+
+
+
+
+
+Probability Distributions
+	A probability distribution shows how probability is distributed across values.
+	Discrete Distributions
+
+		Binomial
+		Poisson
+
+	Continuous Distributions
+
+		Normal
+		Exponential
+
+
+
+
+
+	PMF (Probability Mass Function)
+		Used for discrete random variables.
+
+
+
+	PDF (Probability Density Function)
+		Used for continuous random variables.
+
+
+	CDF (Cumulative Distribution Function)
+		CDF gives probability up to a value.
+
+
+
+
+Hypothesis 
+
+
+	z score :
+		how far a data value is from the mean in terms of standard deviations.
+
+				z=   x−μ​
+				   	  σ
+
+				x = data value
+
+				μ (mu) = population mean
+
+				σ (sigma) = standard deviation
+
+	Z-Test : 
+		Z-test checks if a sample mean is significantly different from the population mean.
+
+		Z=   xˉ−μ
+			 σ/n
+	​
+
+		Where:
+			x̄ = sample mean
+
+			μ = population mean
+
+			σ = population standard deviation
+
+			n = sample size
+
+		|Z| > 1.96  → Reject null hypothesis
+		|Z| < 1.96  → Accept null hypothesis
+
+	
+	T-Test :
+		T-test is used to compare means when the sample size is small.
+
+		Why T-Test?
+
+			Small samples have more uncertainty, so T-distribution has fatter tails.
+
+		T-Test Formula
+
+					t = xˉ−μ
+						s/sqrt(n)
+
+
+			Where:
+
+			x̄ = sample mean
+
+			μ = population mean
+
+			s = sample standard deviation
+
+			n = sample size
+
+		types of t Testing :
+
+			1. One Sample T-Test
+
+				Compare sample mean vs population mean
+
+				Example .
+					Average weight claimed = 70 kg
+					Sample mean = 68 kg
+
+
+			2. Independent T-Test
+
+				Compare two different groups
+
+				Example .
+						Group A teaching method
+						Group B teaching method
+						Compare student scores
+
+
+
+			3. Paired T-Test
+
+				Compare same group before and after
+
+				Example
+
+				Weight before diet
+				Weight after diet
+
+
+
+	Chi-Square Test (χ² Test)
+
+		The Chi-Square test checks whether two categorical variables are related or independent.
+
+		Chi-Square Formula
+
+		Where:
+
+		O = Observed value
+
+		E = Expected value
+
+
+		Step 1 — Define Hypothesis
+
+			H₀ (Null Hypothesis)
+			Variables are independent.
+
+			H₁ (Alternative Hypothesis)
+			Variables are related.
+
+			Formula = row_total * column_total
+						grand_total
+
+	2. ANOVA (Analysis of Variance)
+
+		ANOVA checks:
+
+		👉 Are the means of 3 or more groups different?
+
+		Types of ANOVA
+			1. One-Way ANOVA
+
+			One factor.
+
+			Example:
+
+				Teaching method vs score
+
+			2. Two-Way ANOVA
+
+			Two factors.
+
+			Example:
+
+				Teaching method
+				+
+				Gender
+
+Statistics Tests Summary
+
+| Test                | Used For                                                  | Data Type   | Example                                     |
+| ------------------- | --------------------------------------------------------- | ----------- | ------------------------------------------- |
+| **Z-Score**         | Measure how far a value is from the mean                  | Numerical   | Student score compared to class average     |
+| **Z-Test**          | Test sample mean vs population mean (large sample n ≥ 30) | Numerical   | Checking company claim about average salary |
+| **T-Test**          | Compare means when sample size is small (n < 30)          | Numerical   | Compare average marks of two classes        |
+| **Chi-Square Test** | Check relationship between categorical variables          | Categorical | Gender vs Product preference                |
+| **ANOVA**           | Compare means of **3 or more groups**                     | Numerical   | Teaching method A vs B vs C                 |
+

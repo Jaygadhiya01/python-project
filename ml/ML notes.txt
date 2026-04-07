@@ -1,0 +1,9 @@
+supervised learning
+	-> machine learn with input and output
+	->in that two type of learning
+		->regression 
+			output is number
+		->classification
+			output is category 
+
+
