@@ -78,7 +78,7 @@ k_poly = X_poly.shape[1]-1
 adj_r2_poly= adjusted_r2(r2_ploy,n,k_poly)
 print(f" adjusted r2 poly {adj_r2_poly}")
 
-
+# ========================================== 
 # Step 9: Linear Regression Errors 
 # VISUALIZATION 
 # ========================================== 
